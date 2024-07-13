@@ -3,3 +3,7 @@
   border: 1px solid #0496ff;
   border-radius: 6px;
 }
+
+.input-2 {
+  min-width: 130px;
+}
