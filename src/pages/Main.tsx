@@ -105,6 +105,7 @@ const Main = () => {
   }
 
   const isLoading = status === 'loading'
+  const convertAmount = Number(data?.conversion_amounts[currencyData.targetCurrency]).toFixed(4)
 
   return (
     <div className="main-container">
@@ -112,7 +113,7 @@ const Main = () => {
         <Text className="text-header">Currency Converter</Text>
         <div className="value-container">
           <Text className="amount">
-            {data ? Number(data?.conversion_amounts[currencyData.targetCurrency]).toFixed(4) : '-'}
+            {data ? `${convertAmount} ${currencyData.targetCurrency}` : '-'}
           </Text>
         </div>
         <div className="input-container">
