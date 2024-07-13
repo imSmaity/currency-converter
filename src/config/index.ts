@@ -4,6 +4,9 @@ const config = {
     token: process.env.REACT_APP_API_TOKEN || '',
     CURRENCY_CODES: {
       BASE: '/codes'
+    },
+    HISTORY: {
+      BASE: '/history'
     }
   }
 }

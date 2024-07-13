@@ -1,5 +1,4 @@
-import React, { ChangeEvent, SelectHTMLAttributes, useContext } from 'react'
-import { DropdownContext } from '../../context/CurrencyDropdownContext'
+import React, { SelectHTMLAttributes } from 'react'
 import getCountryFlagUrl from '../../utils/getCountryFlagUrl'
 import './styles.css'
 

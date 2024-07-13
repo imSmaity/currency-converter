@@ -1,6 +1,6 @@
-import React, { createContext, ReactNode, useEffect, useState } from 'react'
-import useFetch from '../hooks/useFetch'
+import React, { createContext, ReactNode } from 'react'
 import Api from '../Api'
+import useFetch from '../hooks/useFetch'
 
 interface ICurrencyDropdownContextProps {
   children: ReactNode

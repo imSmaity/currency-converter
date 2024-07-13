@@ -7,7 +7,7 @@ export enum FetchStatus {
   Error = 'error'
 }
 
-const useFetch = (func: () => Promise<any>, callback?: (data: any) => void) => {
+const useFetch = (func: () => Promise<any>, effect: any = [], callback?: (data: any) => void) => {
   const [data, setData] = useState<any>(null)
   const [status, setStatus] = useState<FetchStatus>(FetchStatus.Idle)
 
@@ -29,7 +29,7 @@ const useFetch = (func: () => Promise<any>, callback?: (data: any) => void) => {
       .finally(() => {
         setStatus(FetchStatus.Idle)
       })
-  }, [func])
+  }, [...effect])
 
   return { data, status }
 }
