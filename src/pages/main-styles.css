@@ -1,0 +1,45 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  border: 1px solid #0496ff;
+  border-radius: 8px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 30rem;
+}
+
+.text-header {
+  font-size: 24px;
+  color: #0496ff;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.currency-select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
